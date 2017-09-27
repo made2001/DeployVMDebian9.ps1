@@ -1,5 +1,5 @@
 # DeployVMDebian9.ps1
-POWERCLI Script to deploy, and configure Debian9 VM into VCenter 6.5 from a template 
+POWERCLI Script to deploy, and configure Debian9 VM into VCenter 6.5 from a template via PowerShell.
 Put the two sh files into /root of your debian template vm and make it executable (chmod +x customization.sh host-config.sh
 )
 
