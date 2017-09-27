@@ -22,4 +22,4 @@ echo "  address $IP" >> /etc/network/interfaces
 echo "  netmask $SUBNET" >> /etc/network/interfaces
 echo "  gateway $GATEWAY" >> /etc/network/interfaces
 
-rm -rf /root/customization.sh
+rm -f /root/customization.sh
