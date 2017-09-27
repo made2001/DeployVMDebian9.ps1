@@ -6,7 +6,7 @@
 #
 #version history
 #v1 initial release on 2017-09-26
-#v1.1 add hosts config script and move vm to vcenter folder
+#v1.1 add hosts config script and move vm to the selected vcenter folder
 
 
 # Start configuration
@@ -69,8 +69,9 @@ if ($poweron -eq "ok") {
     Write-Host "$vmname started."
 }
  
-$command = "/root/customization.sh $vmname $ip $netmask $gateway"
+
 #start script to configure network
+$command = "/root/customization.sh $vmname $ip $netmask $gateway"
 Invoke-VMScript -VM $vmname -ScriptText $command -GuestUser $GuestCred -GuestPassword $GuestPass -ScriptType Bash
 
 
